@@ -82,7 +82,7 @@ VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/")
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', '0')) # Add time in seconds
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-MAX_BTN = int(environ.get('MAX_BTN', 10))
+MAX_BTN = int(environ.get('MAX_BTN', '10'))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'hindi english telugu tamil kannada malayalam marathi punjabi').split()]
 QUALITY = [quality.lower() for quality in environ.get('QUALITY', '360p 480p 720p 1080p 2160p').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
@@ -113,7 +113,7 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'sampleupi@upi')
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True)
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002182452942")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
     exit()
